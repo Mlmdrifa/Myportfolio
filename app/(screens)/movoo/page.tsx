@@ -30,6 +30,7 @@ export default function MovoOScreen() {
       <Section>
         <div className=" flex justify-center">
           <h2 className="font-caption text-5xl text-primary">MovoO</h2>
+          <Spacing size="md" />
         </div>
         <div className="w-full flex justify-center">
           <div className="w-80 h-90">

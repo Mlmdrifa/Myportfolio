@@ -36,8 +36,8 @@ export default function SmartMenuScreen() {
       <Section>
         <div className=" flex justify-center">
           <h2 className="font-caption text-5xl text-primary">Smart Menu</h2>
+          <Spacing size="md" />
         </div>
-
         <div className="w-full flex justify-center">
           <div className="w-80 h-90">
             <Carousel items={images} />
