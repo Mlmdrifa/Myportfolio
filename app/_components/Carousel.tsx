@@ -29,7 +29,7 @@ export default function Carousel({ items }: { items: { src: string }[] }) {
           data-twe-carousel-init
           data-twe-ride="carousel"
         >
-          <div
+          {/* <div
             className=" carousel-indicators absolute bottom-0 left-0 right-0 mb-4 flex justify-center"
             data-twe-carousel-indicators
           >
@@ -40,7 +40,27 @@ export default function Carousel({ items }: { items: { src: string }[] }) {
                 data-twe-slide-to={index}
                 data-twe-carousel-active={activeIndex === index}
                 className={`mx-[3px] mx-1 box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-purple-900 bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none ${
-                  activeIndex === index ? "opacity-900" : ""
+                  activeIndex === index ? "opacity-100" : ""
+                }`}
+                aria-label={`Slide ${index + 1}`}
+                onClick={() => goToSlide(index + 1)}
+                aria-current={activeIndex === index ? "true" : "false"}
+              />
+            ))}
+          </div> */}
+
+          <div
+            className="carousel-indicators absolute bottom-0 left-0 right-0 mb-4 flex justify-center"
+            data-twe-carousel-indicators
+          >
+            {items.map((_, index) => (
+              <button
+                key={index}
+                data-twe-target="#carouselExampleIndicators"
+                data-twe-slide-to={index + 1}
+                data-twe-carousel-active={activeIndex === index}
+                className={`mx-1 box-content h-[3px] w-[30px] cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-pink-300 bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none ${
+                  activeIndex === index ? "opacity-100 active" : ""
                 }`}
                 aria-label={`Slide ${index + 1}`}
                 onClick={() => goToSlide(index)}
