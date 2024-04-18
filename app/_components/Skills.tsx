@@ -11,7 +11,7 @@ export const Skills = () => {
     <Section className="flex flex-col items-start gap-4">
       <Badge variant="outline">Comptétences</Badge>
       <h2 className=" pb-2 text-2xl font-semibold tracking-tight first:mt-0">
-        J'aime travaillé avec...
+        J'apprécie travailler avec les technologies suivantes :
       </h2>
       <div className="flex max-md:flex-col gap-4 flex-1">
         <div className="flex flex-col gap-2">

@@ -6,10 +6,10 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 py-5">
-      <Section className="max-w-3xl px-4 mx-auto flex items-center justify-between">
+    <header className="top-0 py-3">
+      <Section className="max-w-3xl px-4 flex items-center justify-between">
         <Link href={"/"}>
-          <h1 className="text-lg font-bold text-primary">Drifa.M</h1>
+          <h1 className="text-lg font-bold text-foreground">Drifa.M</h1>
         </Link>
         <div className="flex-1" />
         <ul className="flex items-center gap-2">

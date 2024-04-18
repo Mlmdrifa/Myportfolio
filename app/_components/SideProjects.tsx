@@ -7,8 +7,14 @@ import {
   Move,
 } from "lucide-react";
 
-// import { Bed, ChefHat, Handshake, Move } from "lucide";
 import Link from "next/link";
+
+export type SideProjectProps = {
+  Logo: LucideIcon;
+  title: string;
+  description: string;
+  href: string;
+};
 
 export const SIDE_PROJECTS: SideProjectProps[] = [
   {
@@ -45,12 +51,7 @@ export const SIDE_PROJECTS: SideProjectProps[] = [
     href: "/",
   },
 ];
-export type SideProjectProps = {
-  Logo: LucideIcon;
-  title: string;
-  description: string;
-  href?: string;
-};
+
 export const SideProject = (props: SideProjectProps) => {
   const { Logo, title, description, href } = props;
 

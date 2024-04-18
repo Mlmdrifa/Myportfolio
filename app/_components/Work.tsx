@@ -3,13 +3,22 @@
 import { Badge } from "@/components/badge";
 import Link from "next/link";
 
+export type WorkProps = {
+  image?: string;
+  title: string;
+  role: string;
+  date: string;
+  url: URL;
+  formation?: boolean;
+};
+
 export const WORKS: WorkProps[] = [
   {
     image:
       "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
     title: "Aks Digital Hub",
     role: "Dev React Native",
-    url: "https://github.com/AKS-Digital-Hub/beauty-service",
+    url: new URL("https://github.com/AKS-Digital-Hub/beauty-service"),
     date: "2023-Present",
     formation: true,
   },
@@ -17,7 +26,7 @@ export const WORKS: WorkProps[] = [
     image: "https://www.lereacteur.io/logo-le-reacteur-2.png",
     title: "Le Reacteur",
     role: "Bootcamp",
-    url: "https://apollo.lereacteur.io/",
+    url: new URL("https://apollo.lereacteur.io/"),
     date: "2023-Present",
     formation: true,
   },
@@ -25,19 +34,12 @@ export const WORKS: WorkProps[] = [
     image:
       "https://www.education.gouv.fr/sites/default/files/site_logo/2024-02/logoMENJ_tronque.png",
     title: "Education nationale",
-    role: "Accompagnant d'élèves en situation de handicap",
-    url: "https://www.education.gouv.fr/",
+    role: "Accompagnant d'élèves ",
+    url: new URL("https://www.education.gouv.fr/"),
     date: "2020-2023",
   },
 ];
-export type WorkProps = {
-  image?: string;
-  title: string;
-  role: string;
-  date: string;
-  url?: string;
-  formation?: boolean;
-};
+
 export const Work = (props: WorkProps) => {
   const { image, title, date, role } = props;
   return (
@@ -45,7 +47,7 @@ export const Work = (props: WorkProps) => {
       href={props.url}
       className=" inline-flex items-center gap-4 hover:bg-accent/40 transitions-colors p-2 rounded"
     >
-      <div className="flex items-center gap-2 justify-around ">
+      <div className="flex items-center gap-2 justify-around  ">
         <img
           src={image}
           alt={title}

@@ -7,7 +7,7 @@ import { ArrowUpRight } from "lucide-react";
 export const ContactCard = (props: {
   image: string;
   mediumImage: string;
-  name: string;
+  name?: string;
   description?: string;
   url: string;
   className?: string;
@@ -30,7 +30,7 @@ export const ContactCard = (props: {
           <img
             src={mediumImage}
             alt={name}
-            className="w-4 h-4 absolute -bottom-1 -right-1 rounded-full object-contain "
+            className="w-5 h-5 absolute -bottom-1 -right-1 rounded-full object-contain "
           />
         </div>
         <div className="flex-1">

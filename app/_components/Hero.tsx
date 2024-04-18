@@ -15,19 +15,20 @@ export const Hero = () => {
   return (
     <Section className="flex max-md:flex-col items-start gap-4">
       <div className="flex-[3] w-full p-4 flex flex-col gap-2">
-        <h2 className="font-caption text-5xl text-primary">Drifa MALOUM</h2>
-        <h3 className="text-3xl font-caption">Développeuse Web/Mobile</h3>
+        <h2 className="font-caption text-5xl ">Drifa MALOUM</h2>
+        <h3 className="text-3xl font-captiont text-primary">
+          Développeuse React / React Native
+        </h3>
         <p className="text-base">
           Développeuse web front-end spécialisée en
           <Link href={"https://reactnative.dev/"}>
             <Code>React Native.</Code>
           </Link>
           Mon parcours est axé sur la création d&apos;expériences utilisateur
-          fluides et engageantes pour les applications mobiles. Passionnée par
-          l&apos;innovation technologique, j&apos;explore constamment de
-          nouvelles approches pour offrir des solutions créatives et efficaces.
+          fluides et engageantes pour les applications mobiles. Mon expérience
+          comprend la création d&apos;applications mobiles visant à offrir des
+          expériences utilisateur fluides et captivantes.
         </p>
-
         <p className="mb-1 mt-1">Technologies que j&apos;utilise :</p>
         <span className="flex space-x-2 inline">
           <Code className="inline-flex items-center gap-1">
@@ -50,11 +51,8 @@ export const Hero = () => {
             Netlify
           </Code>
         </span>
-
-        <p>
-          N&apos;hésitez pas à explorer et à me contacter pour collaborer ou en
-          savoir plus.
-        </p>
+        N&apos;hésitez pas à explorer mes réalisations et à me contacter pour
+        discuter de collaborations ou en savoir plus sur mes compétences
       </div>
       <div className="flex-[2] max:md-m-auto ml-auto">
         <img
