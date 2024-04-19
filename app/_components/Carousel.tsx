@@ -29,28 +29,17 @@ export default function Carousel({ items }: { items: { src: string }[] }) {
           data-twe-carousel-init
           data-twe-ride="carousel"
         >
-          {/* <div
-            className=" carousel-indicators absolute bottom-0 left-0 right-0 mb-4 flex justify-center"
-            data-twe-carousel-indicators
-          >
-            {items.map((_, index) => (
-              <button
-                key={index}
-                data-twe-target="#carouselExampleIndicators"
-                data-twe-slide-to={index}
-                data-twe-carousel-active={activeIndex === index}
-                className={`mx-[3px] mx-1 box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-purple-900 bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none ${
-                  activeIndex === index ? "opacity-100" : ""
-                }`}
-                aria-label={`Slide ${index + 1}`}
-                onClick={() => goToSlide(index + 1)}
-                aria-current={activeIndex === index ? "true" : "false"}
-              />
-            ))}
-          </div> */}
-
           <div
-            className="carousel-indicators absolute bottom-0 left-0 right-0 mb-4 flex justify-center"
+            className="
+            carousel-indicators
+            absolute
+            bottom-0
+            left-0
+            right-10
+            flex
+            justify-center
+            mb-14
+            "
             data-twe-carousel-indicators
           >
             {items.map((_, index) => (
@@ -59,16 +48,27 @@ export default function Carousel({ items }: { items: { src: string }[] }) {
                 data-twe-target="#carouselExampleIndicators"
                 data-twe-slide-to={index + 1}
                 data-twe-carousel-active={activeIndex === index}
-                className={`mx-1 box-content h-[3px] w-[30px] cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-pink-300 bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none ${
-                  activeIndex === index ? "opacity-100 active" : ""
-                }`}
+                className={`
+                  mx-1
+                  h-2
+                  w-2
+                  rounded-full
+                  bg-white
+                  border
+                  border-solid
+                  border-transparent
+                  focus:outline-none
+                  focus:border-gray-500
+                  transition-opacity
+                  duration-300                   ${
+                    activeIndex === index ? "opacity-100 active" : ""
+                  }`}
                 aria-label={`Slide ${index + 1}`}
                 onClick={() => goToSlide(index)}
                 aria-current={activeIndex === index ? "true" : "false"}
               />
             ))}
           </div>
-
           <div className="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
             {items.map((item, index) => (
               <div
@@ -78,7 +78,7 @@ export default function Carousel({ items }: { items: { src: string }[] }) {
                 data-twe-target="#carouselExampleIndicators"
                 className={`relative float-left ${
                   activeIndex === index ? "opacity-100" : "hidden"
-                } w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none`}
+                } w-full transition-transform duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none`}
                 data-twe-carousel-item
                 onClick={() => goToSlide(index)}
                 aria-current={activeIndex === index ? "true" : "false"}
