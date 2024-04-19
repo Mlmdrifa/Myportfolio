@@ -9,8 +9,8 @@ import Notif from "../movoo/images/notification.png";
 import Otp from "../movoo/images/otp.png";
 import Profil from "../movoo/images/profil.png";
 import { Spacing } from "@/app/_components/Spacing";
-import { Card } from "@/components/card";
 import { STACKS, Stack } from "@/app/_components/Stacks";
+import { Card } from "@/components/card";
 
 const images: { src: string }[] = [
   {

@@ -18,8 +18,8 @@ import Signup from "../beauty-service/images/signup.png";
 import { Spacing } from "@/app/_components/Spacing";
 import Carousel from "@/app/_components/Carousel";
 
-import { Card } from "@/components/card";
 import { STACKS, Stack } from "@/app/_components/Stacks";
+import { Card } from "@/components/card";
 
 const images: { src: string }[] = [
   { src: Logo.src },
