@@ -22,16 +22,20 @@ export const Skills = () => {
           />
           <h3 className="text-xl font-bold dark:text-white ">React Native</h3>
           <p className="text-sm text-muted-foreground">
-            Je travaille régulièrement avec <Code>ReactNative</Code> en
-            utilisant <Code>TypeScript</Code> pour la plupart de mes projets.
+            Je travaille régulièrement avec
+            <Code className="text-white ">ReactNative</Code> en utilisant
+            <Code className="text-white ">TypeScript</Code> pour la plupart de
+            mes projets.
           </p>
         </div>
         <div className=" flex flex-col gap-2">
           <SiTypescript size={42} />
           <h3 className="text-xl font-bold dark:text-white ">TypeScript</h3>
           <p className="text-sm text-muted-foreground">
-            Je suis familière avec <Code>TypeScript</Code> et j'utilise
-            également <Code>JavaScript</Code> dans mes projets
+            Je suis familière avec
+            <Code className="text-white ">TypeScript</Code> et j'utilise
+            également <Code className="text-white ">JavaScript</Code> dans mes
+            projets
           </p>
         </div>
         <div className="flex flex-col gap-2">
@@ -43,7 +47,7 @@ export const Skills = () => {
           <h3 className="text-xl font-bold dark:text-white ">React</h3>
           <p className="text-sm text-muted-foreground">
             Bien que <Code>React Native</Code> soit mon principal framework,
-            j'utilise également <Code>React</Code> avec <Code>Next.js</Code>pour
+            j'utilise également<Code>React</Code> avec<Code>Next.js</Code>pour
             certaines applications
           </p>
         </div>
