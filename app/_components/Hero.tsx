@@ -16,13 +16,13 @@ export const Hero = () => {
     <Section className="flex max-md:flex-col items-start gap-4">
       <div className="flex-[3] w-full p-4 flex flex-col gap-2">
         <h2 className="font-caption text-5xl ">Drifa MALOUM</h2>
-        <h3 className="text-3xl font-captiont text-primary">
+        <h3 className="text-3xl font-captiont text-gray-300">
           Développeuse React / React Native
         </h3>
         <p className="text-base">
           Développeuse web front-end spécialisée en
           <Link href={"https://reactnative.dev/"}>
-            <Code>React Native.</Code>
+            <Code className="text-white ">React Native.</Code>
           </Link>
           Mon parcours est axé sur la création d&apos;expériences utilisateur
           fluides et engageantes pour les applications mobiles. Mon expérience
@@ -31,22 +31,22 @@ export const Hero = () => {
         </p>
         <p className="mb-1 mt-1">Technologies que j&apos;utilise :</p>
         <span className="flex space-x-2 inline">
-          <Code className="inline-flex items-center gap-1">
+          <Code className=" text-white inline-flex items-center gap-1">
             <SiJavascript /> Javascript
           </Code>
-          <Code className="inline-flex items-center gap-1">
+          <Code className="text-white inline-flex items-center gap-1">
             <SiTypescript />
             Typescript
           </Code>
-          <Code className="inline-flex items-center gap-1">
+          <Code className="text-white inline-flex items-center gap-1">
             <SiVite />
             Vite
           </Code>
-          <Code className="inline-flex items-center gap-1">
+          <Code className="text-white inline-flex items-center gap-1">
             <SiMongodb />
             Mongodb
           </Code>
-          <Code className="inline-flex items-center gap-1">
+          <Code className="text-white inline-flex items-center gap-1">
             <SiNetlify />
             Netlify
           </Code>
