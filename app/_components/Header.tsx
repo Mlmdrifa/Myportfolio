@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="top-0 py-3">
+    <header className="top-0 py-3 mt-3">
       <Section className="max-w-3xl px-4 flex items-center justify-between">
         <Link href={"/"}>
           <h1 className="text-lg font-bold text-foreground">Drifa.M</h1>
