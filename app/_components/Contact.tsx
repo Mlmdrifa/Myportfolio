@@ -26,7 +26,7 @@ export const Contact = () => {
           url="mailto:maloum.drifaa@gmail.com"
           image="https://media.licdn.com/dms/image/D4E03AQEK6Ohy0pCMRA/profile-displayphoto-shrink_400_400/0/1704585988656?e=1718236800&v=beta&t=G-pOosowLK12fU8zbl0oqp4h9STmiuxEjuhjvLK5CSg"
           mediumImage="https://static.vecteezy.com/system/resources/previews/016/716/465/non_2x/gmail-icon-free-png.png"
-          description="N'hésitez pas à me contacter pour collaborer ou en savoir plus"
+          description="N'hésitez pas à me contacter pour en savoir plus"
         />
       </div>
     </Section>

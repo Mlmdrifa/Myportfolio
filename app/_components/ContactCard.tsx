@@ -9,13 +9,15 @@ export const ContactCard = (props: {
   mediumImage: string;
   name?: string;
   description?: string;
-  url: string;
+  url: string | URL;
   className?: string;
 }) => {
   const { image, mediumImage, name, description, url, className } = props;
+  const urlStr = typeof url === "string" ? url : url.toString();
+
   return (
     <a
-      href={url}
+      href={urlStr}
       className={cn("w-full ", props.className)}
       target="_blank"
       rel="noopener noreferrer"
