@@ -4,7 +4,7 @@ import { Section } from "../../_components/Section";
 import Header from "../../_components/Header";
 import Email from "../../(screens)/smart-menu/images/email.png";
 import Login from "../smart-menu/images/login.png";
-import Otp from "../smart-menu/images/otp.png";
+import Otp from "../smart-menu/images/Otp.png";
 import Signup from "../smart-menu/images/signup.png";
 import { Spacing } from "@/app/_components/Spacing";
 import Carousel from "@/app/_components/Carousel";
