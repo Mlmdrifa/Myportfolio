@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 
-import { Card } from "@/components/card";
+import { Card } from "./Card";
+
 import { cn } from "@/lib/utils";
 import { ArrowUpRight } from "lucide-react";
 

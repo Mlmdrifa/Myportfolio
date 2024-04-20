@@ -19,7 +19,7 @@ import { Spacing } from "@/app/_components/Spacing";
 import Carousel from "@/app/_components/Carousel";
 
 import { STACKS, Stack } from "@/app/_components/Stacks";
-import { Card } from "@/components/card";
+import { Card } from "@/app/_components/Card";
 
 const images: { src: string }[] = [
   { src: Logo.src },

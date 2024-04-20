@@ -1,4 +1,4 @@
-import { buttonVariants } from "@/components/button";
+import { buttonVariants } from "@/app/_components/Button";
 import { cn } from "@/lib/utils";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { Section } from "./Section";

@@ -5,7 +5,7 @@ import { WORKS, Work } from "./Work";
 
 import { Section } from "./Section";
 import { SIDE_PROJECTS, SideProject } from "./SideProjects";
-import { Card } from "@/components/card";
+import { Card } from "./Card";
 
 export default function Projects() {
   return (

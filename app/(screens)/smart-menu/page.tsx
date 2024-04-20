@@ -9,7 +9,7 @@ import Signup from "../smart-menu/images/signup.png";
 import { Spacing } from "@/app/_components/Spacing";
 import Carousel from "@/app/_components/Carousel";
 import Start from "../smart-menu/images/start.png";
-import { Card } from "@/components/card";
+import { Card } from "@/app/_components/Card";
 import { STACKS, Stack } from "@/app/_components/Stacks";
 
 const images: { src: string }[] = [

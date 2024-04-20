@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import { Badge } from "@/components/badge";
+import { Badge } from "@/app/_components/Badge";
 import { Section } from "./Section";
 import { SiTypescript } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";

@@ -10,7 +10,7 @@ import Otp from "../movoo/images/otp.png";
 import Profil from "../movoo/images/profil.png";
 import { Spacing } from "@/app/_components/Spacing";
 import { STACKS, Stack } from "@/app/_components/Stacks";
-import { Card } from "@/components/card";
+import { Card } from "@/app/_components/Card";
 
 const images: { src: string }[] = [
   {

@@ -1,4 +1,4 @@
-import { Badge } from "@/components/badge";
+import { Badge } from "@/app/_components/Badge";
 import { ContactCard } from "./ContactCard";
 import { Section } from "./Section";
 

@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 
-import { Badge } from "@/components/badge";
+import { Badge } from "@/app/_components/Badge";
 import Link from "next/link";
 
 export type WorkProps = {
