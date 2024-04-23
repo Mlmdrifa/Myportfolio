@@ -14,9 +14,9 @@ import Link from "next/link";
 export const Hero = () => {
   return (
     <Section className="flex max-md:flex-col items-start gap-4">
-      <div className="flex-[3] w-full p-4 flex flex-col gap-2">
+      <div className="flex-[3] w-full p-4 flex flex-col gap-2 text-center ...">
         <h2 className="font-caption text-5xl ">Drifa MALOUM</h2>
-        <h3 className="text-3xl font-captiont text-gray-300">
+        <h3 className="text-3xl font-captiont text-gray-300  ">
           Développeuse React / React Native
         </h3>
         <p className="text-base">
