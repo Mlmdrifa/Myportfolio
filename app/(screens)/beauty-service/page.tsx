@@ -44,21 +44,27 @@ export default function BeautyServicesScreens() {
       <Header />
       <Spacing size="sm" />
       <Section>
-        <div className="flex justify-center ">
-          <h3 className="font-caption text-5xl text-white">Beauty service</h3>
-          <Spacing size="md" />
+        <div className="flex flex-col items-center justify-center">
+          <h3 className="font-caption text-5xl text-white mb-4">
+            Beauty service
+          </h3>
         </div>
-        <div className="w-full flex justify-center">
-          <div className="w-80 h-80">
-            <Carousel items={images} />
+        <Spacing size="sm" />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-screen-lg">
+          <div className="flex justify-center">
+            <div className="w-full md:w-4/5 lg:w-3/4 xl:w-2/3">
+              <Carousel items={images} />
+            </div>
           </div>
           <div>
-            <div className="flex-[2] w-full flex flex-col gap-4 pl-9">
+            <div className="flex flex-col justify-center">
               <Spacing size="sm" />
-              <Card className="p-4 max-w-[300px]">
-                <p className="text-lg text-muted-foreground text-white flex justify-center">
+
+              <Card className="p-4 max-w-[300px] mx-auto md:mx-0">
+                <p className="text-lg text-muted-foreground text-white flex justify-center md:justify-start">
                   Stacks
                 </p>
+
                 <div className="flex flex-col gap-1 text-white">
                   {STACKS.map((stack, index) => (
                     <Stack key={index} {...stack} />
