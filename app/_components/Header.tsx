@@ -9,7 +9,9 @@ export default function Header() {
     <header className="top-0 py-3 mt-3">
       <Section className="max-w-3xl px-4 flex items-center justify-between">
         <Link href={"/"}>
-          <h1 className="text-lg font-bold text-foreground">Drifa.M</h1>
+          <h1 className="text-lg font-bold text-foreground no-underline hover:underline">
+            Drifa.M
+          </h1>
         </Link>
         <div className="flex-1" />
         <ul className="flex items-center gap-2">
