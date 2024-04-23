@@ -15,19 +15,19 @@ export const Hero = () => {
   return (
     <Section className="flex max-md:flex-col items-start gap-4">
       <div className="flex-[3] w-full p-4 flex flex-col gap-2 text-center">
-        <h2 className="font-caption text-5xl ">Drifa MALOUM</h2>
-        <h3 className="text-3xl font-caption text-gray-300 ">
+        <h2 className="font-caption text-5xl">Drifa MALOUM</h2>
+        <h3 className="text-3xl font-caption text-gray-300">
           Développeuse React / React Native
         </h3>
         <p className="text-base">
           Développeuse web front-end spécialisée en
           <Link href={"https://reactnative.dev/"}>
-            <Code className="text-white ">React Native.</Code>
+            <Code className="text-white "> React Native.</Code>
           </Link>
           Passionnée par la création d&apos;expériences fluides et captivantes
           pour les applications mobiles.
         </p>
-        <p className="mb-1 mt-1 text-center md:text-left">
+        <p className="mb-1 mt-1 text-center">
           Technologies que j&apos;utilise :
         </p>
         <div className="flex flex-wrap justify-center md:justify-start gap-2">

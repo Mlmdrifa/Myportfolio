@@ -30,16 +30,7 @@ export default function Carousel({ items }: { items: { src: string }[] }) {
           data-twe-ride="carousel"
         >
           <div
-            className="
-            carousel-indicators
-            absolute
-            bottom-0
-            left-0
-            right-10
-            flex
-            justify-center
-            mb-14
-            "
+            className="flex justify-center space-x-2 mb-4 md:mb-0"
             data-twe-carousel-indicators
           >
             {items.map((_, index) => (
@@ -60,9 +51,14 @@ export default function Carousel({ items }: { items: { src: string }[] }) {
                   focus:outline-none
                   focus:border-gray-500
                   transition-opacity
-                  duration-300                   ${
-                    activeIndex === index ? "opacity-100 active" : ""
-                  }`}
+                  duration-300  
+                  mb-8
+
+                            ${
+                              activeIndex === index
+                                ? "opacity-100 active"
+                                : "opacity-50"
+                            }`}
                 aria-label={`Slide ${index + 1}`}
                 onClick={() => goToSlide(index)}
                 aria-current={activeIndex === index ? "true" : "false"}
@@ -87,53 +83,56 @@ export default function Carousel({ items }: { items: { src: string }[] }) {
               </div>
             ))}
           </div>
-          <div className="flex space-x-56 mt-5 ">
-            <button
-              type="button"
-              data-twe-target="#carouselExampleCaptions"
-              data-twe-slide="prev"
-              onClick={goToPreviousSlide}
-            >
-              <span className="inline-block h-8 w-8">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="ml-1 absolute h-7 w-7  z-[1] opacity-90 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M16.25 19.5l-7.5-7.5 7.5-7.5"
-                  />
-                </svg>
-              </span>
-            </button>
-            <button
-              type="button"
-              data-twe-target="#carouselExampleCaptions"
-              data-twe-slide="next"
-              onClick={goToNextSlide}
-            >
-              <span className="inline-block h-8 w-8">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="mr-4 absolute h-7 w-7  z-[1] opacity-90 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                  />
-                </svg>
-              </span>
-            </button>
+
+          <div className="flex flex-col items-center md:flex-row md:justify-center md:items-start space-y-5 md:space-y-0 mt-5">
+            <div className="flex space-x-56">
+              <button
+                type="button"
+                data-twe-target="#carouselExampleCaptions"
+                data-twe-slide="prev"
+                onClick={goToPreviousSlide}
+              >
+                <span className="inline-block h-8 w-8">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    className="ml-1 absolute h-7 w-7  z-[1] opacity-90 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M16.25 19.5l-7.5-7.5 7.5-7.5"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <button
+                type="button"
+                data-twe-target="#carouselExampleCaptions"
+                data-twe-slide="next"
+                onClick={goToNextSlide}
+              >
+                <span className="inline-block h-8 w-8">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    className="mr-4 absolute h-7 w-7  z-[1] opacity-90 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </div>
           </div>
         </div>
       </Section>

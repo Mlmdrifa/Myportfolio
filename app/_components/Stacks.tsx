@@ -86,7 +86,7 @@ export const Stack = (props: StackProps) => {
       passHref
       className="block hover:bg-accent/90 transition-colors rounded"
     >
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-1">
         <span className="bg-accent text-accent-foreground p-2 rounded-sm">
           {Logo}
         </span>
