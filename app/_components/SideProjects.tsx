@@ -58,9 +58,9 @@ export const SideProject = (props: SideProjectProps) => {
   return (
     <Link
       href={href}
-      className=" inline-flex items-center gap-4 hover:bg-accent/40 transitions-colors p-2 rounded"
+      className="inline-flex items-center gap-4 hover:bg-accent/40 transitions-colors p-2 rounded"
     >
-      <span className="bg-accent text-accent-foreground p-3 rounded-sm">
+      <span className="bg-accent text-accent-foreground p-3 rounded outline-dashed outline-2 outline-offset-2">
         <Logo size={16} />
       </span>
       <div>
