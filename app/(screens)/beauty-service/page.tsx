@@ -1,6 +1,11 @@
 "use client";
 import { Section } from "../../_components/Section";
 import Header from "../../_components/Header";
+import { Spacing } from "@/app/_components/Spacing";
+import Carousel from "@/app/_components/Carousel";
+import { STACKS, Stack } from "@/app/_components/Stacks";
+import { Card } from "@/app/_components/Card";
+
 import Connexion from "../beauty-service/images/connexion.png";
 import Calendar from "../beauty-service/images/calendar.png";
 import About from "../beauty-service/images/about.png";
@@ -15,11 +20,6 @@ import Logo from "../beauty-service/images/logo.png";
 import Identifiant from "../beauty-service/images/identifiant.png";
 import ProfilTheme from "../beauty-service/images/profilTheme.png";
 import Signup from "../beauty-service/images/signup.png";
-import { Spacing } from "@/app/_components/Spacing";
-import Carousel from "@/app/_components/Carousel";
-
-import { STACKS, Stack } from "@/app/_components/Stacks";
-import { Card } from "@/app/_components/Card";
 
 const images: { src: string }[] = [
   { src: Logo.src },
@@ -48,20 +48,19 @@ export default function BeautyServicesScreens() {
           <h3 className="font-caption text-5xl text-white mb-4">
             Beauty service
           </h3>
+          <Spacing size="sm" />
         </div>
-        <Spacing size="sm" />
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-screen-lg">
+        <div className="w-full flex justify-center grid grid-cols-1 md:grid-cols-2 w-full max-w-screen-lg">
           <div className="flex justify-center">
             <div className="w-full md:w-4/5 lg:w-3/4 xl:w-2/3">
               <Carousel items={images} />
             </div>
           </div>
           <div>
-            <div className="flex flex-col justify-center">
+            <div className="flex-[2] w-full flex flex-col gap-4 pl-9 ">
               <Spacing size="sm" />
-
               <Card className="p-4 max-w-[300px] mx-auto md:mx-0">
-                <p className="text-lg text-muted-foreground text-white flex justify-center md:justify-start">
+                <p className="text-lg text-muted-foreground text-white flex justify-center md:justify-start p-2">
                   Stacks
                 </p>
 
@@ -71,6 +70,7 @@ export default function BeautyServicesScreens() {
                   ))}
                 </div>
               </Card>
+              <Spacing size="sm" />
             </div>
           </div>
         </div>

@@ -2,15 +2,16 @@
 
 import { Section } from "../../_components/Section";
 import Header from "../../_components/Header";
+import Carousel from "@/app/_components/Carousel";
+import { Spacing } from "@/app/_components/Spacing";
+import { Card } from "@/app/_components/Card";
+import { STACKS, Stack } from "@/app/_components/Stacks";
+
 import Email from "../../(screens)/smart-menu/images/email.png";
 import Login from "../smart-menu/images/login.png";
 import Otp from "../smart-menu/images/Otp.png";
 import Signup from "../smart-menu/images/signup.png";
-import { Spacing } from "@/app/_components/Spacing";
-import Carousel from "@/app/_components/Carousel";
 import Start from "../smart-menu/images/start.png";
-import { Card } from "@/app/_components/Card";
-import { STACKS, Stack } from "@/app/_components/Stacks";
 
 const images: { src: string }[] = [
   {
@@ -36,19 +37,21 @@ export default function SmartMenuScreen() {
       <Header />
       <Spacing size="sm" />
       <Section>
-        <div className=" flex justify-center">
+        <div className="flex flex-col items-center justify-center">
           <h2 className="font-caption text-5xl text-purple-300">Smart Menu</h2>
           <Spacing size="md" />
         </div>
-        <div className="w-full flex justify-center">
-          <div className="w-80 h-90">
-            <Carousel items={images} />
+        <div className="w-full flex justify-center grid grid-cols-1 md:grid-cols-2 w-full max-w-screen-lg">
+          <div className="flex justify-center">
+            <div className="w-full md:w-4/5 lg:w-3/4 xl:w-2/3">
+              <Carousel items={images} />
+            </div>
           </div>
           <div>
             <div className="flex-[2] w-full flex flex-col gap-4 pl-9">
               <Spacing size="sm" />
-              <Card className="p-4 max-w-[300px]">
-                <p className="text-lg text-muted-foreground text-white flex justify-center">
+              <Card className="p-4 max-w-[300px] mx-auto md:mx-0">
+                <p className="text-lg text-muted-foreground text-white flex justify-center md:justify-start p-2">
                   Stacks
                 </p>
                 <div className="flex flex-col gap-1 text-purple-300">
@@ -57,6 +60,7 @@ export default function SmartMenuScreen() {
                   ))}
                 </div>
               </Card>
+              <Spacing size="sm" />
             </div>
           </div>
         </div>
