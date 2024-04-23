@@ -14,7 +14,7 @@ import Link from "next/link";
 export const Hero = () => {
   return (
     <Section className="flex max-md:flex-col items-start gap-4">
-      <div className="flex-[1] w-full p-4 flex flex-col gap-2 text-center md:text-left">
+      <div className="flex-[3] w-full p-4 flex flex-col gap-2 text-center ...">
         <h2 className="font-caption text-5xl ">Drifa MALOUM</h2>
         <h3 className="text-3xl font-captiont text-gray-300 ">
           Développeuse React / React Native
@@ -29,8 +29,8 @@ export const Hero = () => {
           comprend la création d&apos;applications mobiles visant à offrir des
           expériences utilisateur fluides et captivantes.
         </p>
-        <p className="mb-1 mt-1">Technologies que j&apos;utilise :</p>
-        <span className="flex flex-wrap justify-center md:justify-start space-x-2 md:space-x-0 md:space-y-2">
+        {/* <p className="mb-1 mt-1">Technologies que j&apos;utilise :</p>
+        <span className="flex space-x-2 inline">
           <Code className=" text-white inline-flex items-center gap-1">
             <SiJavascript /> Javascript
           </Code>
@@ -50,14 +50,38 @@ export const Hero = () => {
             <SiNetlify />
             Netlify
           </Code>
-        </span>
+        </span> */}
+        <p className="mb-1 mt-1 text-center md:text-left">
+          Technologies que j&apos;utilise :
+        </p>
+        <div className="flex flex-wrap justify-center md:justify-start gap-2">
+          <Code className="text-white inline-flex items-center gap-1 mb-2 md:mb-0">
+            <SiJavascript /> Javascript
+          </Code>
+          <Code className="text-white inline-flex items-center gap-1 mb-2 md:mb-0">
+            <SiTypescript />
+            Typescript
+          </Code>
+          <Code className="text-white inline-flex items-center gap-1 mb-2 md:mb-0">
+            <SiVite />
+            Vite
+          </Code>
+          <Code className="text-white inline-flex items-center gap-1 mb-2 md:mb-0">
+            <SiMongodb />
+            Mongodb
+          </Code>
+          <Code className="text-white inline-flex items-center gap-1 mb-2 md:mb-0">
+            <SiNetlify />
+            Netlify
+          </Code>
+        </div>
         N&apos;hésitez pas à explorer mes réalisations et à me contacter pour
         discuter de collaborations ou en savoir plus sur mes compétences
       </div>
       <div className="flex-[2] max:md-m-auto ml-auto">
         <img
           src="https://media.licdn.com/dms/image/D4E03AQEK6Ohy0pCMRA/profile-displayphoto-shrink_400_400/0/1704585988656?e=1718236800&v=beta&t=G-pOosowLK12fU8zbl0oqp4h9STmiuxEjuhjvLK5CSg"
-          className="w-26 max-w-xs md:max-w-56 rounded-full mx-auto md:ml-auto"
+          className=" w-26 max-w-xs max-md-w-56 rounded-full"
           alt="Image de Profil"
         />
       </div>
