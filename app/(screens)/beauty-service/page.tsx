@@ -60,7 +60,7 @@ export default function BeautyServicesScreens() {
             <div className="flex-[2] w-full flex flex-col gap-4 pl-9 ">
               <Spacing size="sm" />
               <Card className="p-4 max-w-[300px] mx-auto md:mx-0">
-                <p className="text-lg text-muted-foreground text-white flex justify-center md:justify-start p-2">
+                <p className="text-lg text-muted-foreground text-white flex justify-center justify-start mb-1">
                   Stacks
                 </p>
 
