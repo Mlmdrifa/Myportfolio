@@ -31,7 +31,7 @@ export default function MovoOScreen() {
       <Spacing size="sm" />
       <Section>
         <div className="flex flex-col items-center justify-center">
-          <h3 className="font-caption text-5xl text-white">MovoO</h3>
+          <h3 className="font-caption text-5xl text-orange-500">MovoO</h3>
           <Spacing size="sm" />
         </div>
         <div className="w-full flex justify-center grid grid-cols-1 md:grid-cols-2 w-full max-w-screen-lg">
@@ -41,14 +41,14 @@ export default function MovoOScreen() {
             </div>
           </div>
           <div>
-            <div className="flex-[2] w-full flex flex-col gap-4 pl-9 ">
+            <div className="flex-[2] w-full flex flex-col gap-4 items-center md:items-start md:mx-auto md:mr-0">
               <Spacing size="sm" />
               <Card className="p-4 max-w-[300px] mx-auto md:mx-0">
-                <p className="text-lg text-muted-foreground text-white flex justify-center mb-1">
+                <p className="text-lg text-muted-foreground text-orange flex justify-center mb-1">
                   Stacks
                 </p>
 
-                <div className="flex flex-col gap-1  text-zinc-400">
+                <div className="flex flex-col gap-1  text-orange-500">
                   {STACKS.map((stack, index) => (
                     <Stack key={index} {...stack} />
                   ))}

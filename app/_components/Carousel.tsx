@@ -3,6 +3,7 @@
 
 import { useState } from "react";
 import { Section } from "./Section";
+import { Spacing } from "./Spacing";
 
 export default function Carousel({ items }: { items: { src: string }[] }) {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -84,7 +85,7 @@ export default function Carousel({ items }: { items: { src: string }[] }) {
             ))}
           </div>
 
-          <div className="flex flex-col items-center md:flex-row md:justify-center md:items-start space-y-5 md:space-y-0 mt-5">
+          <div className="flex flex-col items-center md:flex-row md:justify-center md:items-start space-y-5 md:space-y-0 mt-6 ">
             <div className="flex space-x-56">
               <button
                 type="button"

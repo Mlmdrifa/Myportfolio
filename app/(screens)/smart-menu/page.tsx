@@ -39,22 +39,22 @@ export default function SmartMenuScreen() {
       <Section>
         <div className="flex flex-col items-center justify-center">
           <h2 className="font-caption text-5xl text-purple-300">Smart Menu</h2>
-          <Spacing size="md" />
+          <Spacing size="sm" />
         </div>
         <div className="w-full flex justify-center grid grid-cols-1 md:grid-cols-2 w-full max-w-screen-lg">
           <div className="flex justify-center">
-            <div className="w-full md:w-4/5 lg:w-3/4 xl:w-2/3">
+            <div className=" md:w-4/5 lg:w-3/4 xl:w-2/3 ">
               <Carousel items={images} />
             </div>
           </div>
           <div>
-            <div className="flex-[2] w-full flex flex-col gap-4 pl-9">
+            <div className="flex-[2] w-full flex flex-col gap-4 items-center md:items-start md:mx-auto md:mr-0">
               <Spacing size="sm" />
               <Card className="p-4 max-w-[300px] mx-auto md:mx-0">
                 <p className="text-lg text-muted-foreground text-white flex justify-center justify-start mb-1">
                   Stacks
                 </p>
-                <div className="flex flex-col gap-1 text-purple-300">
+                <div className="flex flex-col gap-1 text-purple-300 justify-center md:justify-start">
                   {STACKS.map((stack, index) => (
                     <Stack key={index} {...stack} />
                   ))}
