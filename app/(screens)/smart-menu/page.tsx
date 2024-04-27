@@ -51,7 +51,7 @@ export default function SmartMenuScreen() {
             <div className="flex-[2] w-full flex flex-col gap-4 items-center md:items-start md:mx-auto md:mr-0">
               <Spacing size="sm" />
               <Card className="p-4 max-w-[300px] mx-auto md:mx-0">
-                <p className="text-lg text-muted-foreground text-white flex justify-center justify-start mb-1">
+                <p className="text-lg text-muted-foreground text-white flex justify-center mb-1 md:justify-start">
                   Stacks
                 </p>
                 <div className="flex flex-col gap-1 text-purple-300 justify-center md:justify-start">

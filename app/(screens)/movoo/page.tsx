@@ -34,7 +34,7 @@ export default function MovoOScreen() {
           <h3 className="font-caption text-5xl text-orange-500">MovoO</h3>
           <Spacing size="sm" />
         </div>
-        <div className="w-full flex justify-center grid grid-cols-1 md:grid-cols-2 w-full max-w-screen-lg">
+        <div className="w-full flex justify-center grid grid-cols-1 md:grid-cols-2 max-w-screen-lg">
           <div className="flex justify-center">
             <div className="w-full md:w-4/5 lg:w-3/4 xl:w-2/3">
               <Carousel items={images} />
@@ -44,7 +44,7 @@ export default function MovoOScreen() {
             <div className="flex-[2] w-full flex flex-col gap-4 items-center md:items-start md:mx-auto md:mr-0">
               <Spacing size="sm" />
               <Card className="p-4 max-w-[300px] mx-auto md:mx-0">
-                <p className="text-lg text-muted-foreground text-orange flex justify-center mb-1">
+                <p className="text-lg text-muted-foreground text-orange flex justify-center mb-1 md:justify-start">
                   Stacks
                 </p>
 

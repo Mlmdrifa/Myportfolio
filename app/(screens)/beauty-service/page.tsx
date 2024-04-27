@@ -45,7 +45,7 @@ export default function BeautyServicesScreens() {
       <Spacing size="sm" />
       <Section>
         <div className="flex flex-col items-center justify-center">
-          <h3 className="font-caption text-5xl text-red-700 mb-4">
+          <h3 className="font-caption text-5xl text-red-800 mb-4">
             Beauty service
           </h3>
           <Spacing size="sm" />
@@ -61,11 +61,11 @@ export default function BeautyServicesScreens() {
             <div className="flex-[2] w-full flex flex-col gap-4 items-center md:items-start md:mx-auto md:mr-0">
               <Spacing size="sm" />
               <Card className="p-4 max-w-[300px] mx-auto md:mx-0">
-                <p className="text-lg text-muted-foreground text-orange flex justify-center mb-1">
+                <p className="text-lg text-muted-foreground text-white flex justify-center mb-1 md:justify-start">
                   Stacks
                 </p>
 
-                <div className="flex flex-col gap-1 text-red-700">
+                <div className="flex flex-col gap-1 text-red-800">
                   {STACKS.map((stack, index) => (
                     <Stack key={index} {...stack} />
                   ))}
