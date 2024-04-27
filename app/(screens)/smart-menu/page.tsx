@@ -60,7 +60,7 @@ export default function SmartMenuScreen() {
                   ))}
                 </div>
               </Card>
-              <Spacing size="sm" />
+              <Spacing size="md" />
             </div>
           </div>
         </div>
