@@ -45,7 +45,7 @@ export default function BeautyServicesScreens() {
       <Spacing size="sm" />
       <Section>
         <div className="flex flex-col items-center justify-center">
-          <h3 className="font-caption text-5xl text-red-800 mb-4">
+          <h3 className="font-caption text-5xl text-red-200 mb-4">
             Beauty service
           </h3>
           <Spacing size="sm" />
@@ -65,7 +65,7 @@ export default function BeautyServicesScreens() {
                   Stacks
                 </p>
 
-                <div className="flex flex-col gap-1 text-red-800">
+                <div className="flex flex-col gap-1 text-red-200">
                   {STACKS.map((stack, index) => (
                     <Stack key={index} {...stack} />
                   ))}
