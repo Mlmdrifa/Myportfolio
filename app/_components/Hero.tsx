@@ -8,58 +8,57 @@ import {
   SiVite,
   SiMongodb,
   SiNetlify,
+  SiTailwindcss,
 } from "react-icons/si";
 import Link from "next/link";
 
 export const Hero = () => {
   return (
-    <Section className="flex max-md:flex-col items-start gap-4">
-      <div className="flex-[3] w-full p-4 flex flex-col gap-2 text-center">
+    <Section className="flex max-md:flex-col items-center gap-4">
+      <div className="flex-1 max-w-3xl p-4 flex flex-col items-center gap-4 text-center mx-auto">
         <h2 className="font-caption text-5xl">Drifa MALOUM</h2>
         <h3 className="text-3xl font-caption text-gray-300">
-          Développeuse React / React Native
+          Développeuse Fullstack web et mobile
         </h3>
         <p className="text-base">
-          Développeuse web front-end spécialisée en
-          <Link href={"https://reactnative.dev/"}>
-            <Code className="text-white "> React Native.</Code>
-          </Link>
-          Passionnée par la création d&apos;expériences fluides et captivantes
-          pour les applications mobiles.
+          Avec une expérience dans le développement d&apos;applications
+          réactives et performantes.
+          <br /> Mon parcours est axé sur l&apos;innovation technologique et la
+          recherche de solutions créatives pour surmonter divers défis
+          techniques. Je travaille sur des projets fullstack, intégrant des
+          technologies modernes pour garantir une expérience utilisateur fluide
+          et efficace. Mon approche consiste à explorer continuellement de
+          nouvelles méthodes et outils pour améliorer la qualité et la
+          fonctionnalité des applications.
         </p>
-        <p className="mb-1 mt-1 text-center">
-          Technologies que j&apos;utilise :
-        </p>
-        <div className="flex flex-wrap justify-center md:justify-start gap-2">
-          <Code className="text-white inline-flex items-center gap-1 mb-2 md:mb-0">
+        <p className="mb-1 mt-1">Technologies que j&apos;utilise :</p>
+        <div className="flex flex-wrap justify-center gap-2">
+          <Code className="text-white inline-flex items-center gap-1 mb-2">
             <SiJavascript /> Javascript
           </Code>
-          <Code className="text-white inline-flex items-center gap-1 mb-2 md:mb-0">
+          <Code className="text-white inline-flex items-center gap-1 mb-2">
             <SiTypescript />
             Typescript
           </Code>
-          <Code className="text-white inline-flex items-center gap-1 mb-2 md:mb-0">
+          <Code className="text-white inline-flex items-center gap-1 mb-2">
             <SiVite />
             Vite
           </Code>
-          <Code className="text-white inline-flex items-center gap-1 mb-2 md:mb-0">
+          <Code className="text-white inline-flex items-center gap-1 mb-2">
             <SiMongodb />
             Mongodb
           </Code>
-          <Code className="text-white inline-flex items-center gap-1 mb-2 md:mb-0">
+          <Code className="text-white inline-flex items-center gap-1 mb-2">
             <SiNetlify />
             Netlify
           </Code>
+          <Code className="text-white inline-flex items-center gap-1 mb-2">
+            <SiTailwindcss />
+            Tailwind
+          </Code>
         </div>
-        N&apos;hésitez pas à explorer mes réalisations et à me contacter pour
-        discuter de collaborations ou en savoir plus sur mes compétences
-      </div>
-      <div className="flex-[2] md:ml-auto md:mr-0 flex items-center justify-center w-80 h-80 rounded-full mx-auto">
-        <img
-          src="https://media.licdn.com/dms/image/D4E03AQEK6Ohy0pCMRA/profile-displayphoto-shrink_400_400/0/1704585988656?e=1718236800&v=beta&t=G-pOosowLK12fU8zbl0oqp4h9STmiuxEjuhjvLK5CSg"
-          className="rounded-full object-cover"
-          alt="Image de Profil"
-        />
+        N&apos;hésitez pas à explorer et à me contacter pour collaborer ou en
+        savoir plus.
       </div>
     </Section>
   );
