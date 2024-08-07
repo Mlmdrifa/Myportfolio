@@ -24,7 +24,7 @@ export default function Header() {
             <FaGithub size={24} className="text-foreground" />
           </a>
           <a
-            href="https://www.linkedin.com/in/drifa-maloum-077b362a4/"
+            href="https://www.linkedin.com/in/drifa-maloum/"
             className={cn(buttonVariants, { variant: "outline" }, "size-6 p-0")}
             target="_blank"
             rel="noopener noreferrer"
